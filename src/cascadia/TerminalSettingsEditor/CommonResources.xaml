@@ -6,6 +6,7 @@
     <x:Double x:Key="StandardIconSize">14.0</x:Double>
     <Thickness x:Key="StandardIndentMargin">13,0,0,0</Thickness>
     <Thickness x:Key="StandardControlMargin">0,24,0,0</Thickness>
+    <Thickness x:Key="StandardHeaderSpacing">0,0,0,4</Thickness>
     <x:Double x:Key="StandardBoxMinWidth">250</x:Double>
 
     <!-- This is for easier transition to the SettingsContainer control.
@@ -46,7 +47,7 @@
 
     <!--Used to create a header for a control-->
     <Style x:Key="CustomSettingHeaderStyle" TargetType="TextBlock">
-        <Setter Property="Margin" Value="0,0,0,4"/>
+        <Setter Property="Margin" Value="{StaticResource StandardHeaderSpacing}"/>
     </Style>
 
     <!--Used for disclaimers-->

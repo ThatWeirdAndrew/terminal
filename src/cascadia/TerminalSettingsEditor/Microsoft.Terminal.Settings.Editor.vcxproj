@@ -86,6 +86,9 @@
     <ClInclude Include="Rendering.h">
       <DependentUpon>Rendering.xaml</DependentUpon>
     </ClInclude>
+    <ClInclude Include="SettingContainer.h">
+      <DependentUpon>SettingContainer.xaml</DependentUpon>
+    </ClInclude>
     <ClInclude Include="Utils.h" />
   </ItemGroup>
   <!-- ========================= XAML files ======================== -->
@@ -112,6 +115,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Rendering.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SettingContainer.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
@@ -168,6 +174,9 @@
     <ClCompile Include="Rendering.cpp">
       <DependentUpon>Rendering.xaml</DependentUpon>
     </ClCompile>
+    <ClCompile Include="SettingContainer.cpp">
+      <DependentUpon>SettingContainer.xaml</DependentUpon>
+    </ClCompile>
     <ClCompile Include="Utils.cpp" />
   </ItemGroup>
   <!-- ========================= idl Files ======================== -->
@@ -199,6 +208,10 @@
     </Midl>
     <Midl Include="Profiles.idl">
       <DependentUpon>Profiles.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Midl>
+    <Midl Include="SettingContainer.idl">
+      <DependentUpon>SettingContainer.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Midl>
   </ItemGroup>

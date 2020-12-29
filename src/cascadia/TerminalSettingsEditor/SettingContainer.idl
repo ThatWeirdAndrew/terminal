@@ -1,0 +1,18 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT license.
+
+namespace Microsoft.Terminal.Settings.Editor
+{
+    runtimeclass SettingWrapper
+    {
+        Boolean HasValue { get; };
+        void ClearValue();
+    }
+
+    [default_interface] runtimeclass SettingContainer : Windows.UI.Xaml.UserControl
+    {
+        SettingContainer(SettingWrapper setting);
+
+        SettingWrapper Setting { get; };
+    };
+}
