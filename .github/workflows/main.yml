@@ -34,4 +34,4 @@ jobs:
         run: |
           Import-Module .\tools\OpenConsole.psm1
           Set-MsBuildDevEnvironment
-          Invoke-OpenConsoleBuild
+          Invoke-OpenConsoleBuild rel
