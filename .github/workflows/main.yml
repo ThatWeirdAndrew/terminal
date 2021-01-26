@@ -34,4 +34,4 @@ jobs:
         run: |
           Import-Module .\tools\OpenConsole.psm1
           Set-MsBuildDevEnvironment
-          Invoke-OpenConsoleBuild rel
+          Invoke-OpenConsoleBuild /t:"Clean;Build" /m /p:Configuration=Release /p:Platform=x64
