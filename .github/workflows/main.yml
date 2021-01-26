@@ -32,5 +32,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Build Terminal
         run: |
-          .\tools\razzle.cmd
-          bcz
+          Import-Module .\tools\OpenConsole.psm1
+          Set-MsBuildDevEnvironment
+          Invoke-OpenConsoleBuild
